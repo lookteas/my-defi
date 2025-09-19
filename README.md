@@ -300,7 +300,7 @@ npm start
   "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
   "network": {
     "chainId": 31337,
-    "name": "unknown"
+    "name": "localhost"
   },
   "timestamp": "2025-09-18T15:36:29.537Z"
 }
