@@ -39,31 +39,68 @@
 
 ```
 web3_pg/
-├── contracts/                 # 智能合约
-│   ├── MyDeFiToken.sol       # ERC20代币合约
-│   ├── LendingPool.sol       # 借贷池合约
-│   ├── LiquidityPool.sol     # 流动性池合约
-│   ├── YieldFarm.sol         # 流动性挖矿合约
-│   └── Counter.t.sol         # 测试合约
-├── frontend/                 # React前端应用
-│   ├── src/
-│   │   ├── components/       # React组件
-│   │   ├── hooks/           # 自定义Hooks
-│   │   ├── config/          # 配置文件
-│   │   ├── utils/           # 工具函数
-│   │   └── types/           # TypeScript类型定义
-│   ├── package.json         # 前端依赖
-│   └── tsconfig.json        # TypeScript配置
-├── scripts/                 # 部署合约和管理脚本
-│   ├── deploy.ts           # 合约部署脚本
-│   ├── fund-wallet.ts      # 钱包资金管理
-│   └── send-op-tx.ts       # OP链交易脚本
-├── test/                   # 测试文件
-│   ├── DeFiTest.ts         # DeFi系统测试
-│   └── Counter.ts          # 基础测试
+├── .env.example              # 环境变量模板
+├── .gitignore               # Git忽略文件
+├── README.md                # 项目说明文档
+├── SEPOLIA_DEPLOYMENT_GUIDE.md # Sepolia测试网部署指南
+├── contracts/               # 智能合约
+│   ├── MyDeFiToken.sol     # ERC20代币合约
+│   ├── LendingPool.sol     # 借贷池合约
+│   ├── LiquidityPool.sol   # 流动性池合约
+│   ├── YieldFarm.sol       # 流动性挖矿合约
+│   └── Counter.t.sol       # 测试合约
+├── frontend/               # React前端应用
+│   ├── .gitignore         # 前端Git忽略文件
+│   ├── README-dev.md      # 前端开发文档
+│   ├── check-compile.ps1  # 编译检查脚本
+│   ├── package-lock.json  # 前端依赖锁定文件
+│   ├── package.json       # 前端依赖配置
+│   ├── public/            # 静态资源
+│   │   ├── favicon.ico    # 网站图标
+│   │   ├── index.html     # HTML模板
+│   │   ├── manifest.json  # PWA配置
+│   │   └── robots.txt     # 爬虫配置
+│   ├── src/               # 源代码
+│   │   ├── App.test.tsx   # 应用测试
+│   │   ├── App.tsx        # 主应用组件
+│   │   ├── components/    # React组件
+│   │   ├── config/        # 配置文件
+│   │   ├── hooks/         # 自定义Hooks
+│   │   ├── index.tsx      # 应用入口
+│   │   ├── logo.svg       # Logo图标
+│   │   ├── react-app-env.d.ts # React类型定义
+│   │   ├── reportWebVitals.ts # 性能监控
+│   │   ├── setupTests.ts  # 测试配置
+│   │   ├── styles/        # 样式文件
+│   │   ├── types/         # TypeScript类型定义
+│   │   └── utils/         # 工具函数
+│   └── tsconfig.json      # TypeScript配置
 ├── hardhat.config.ts       # Hardhat配置
-├── package.json            # 项目依赖
-└── deployed-addresses.json # 已部署合约地址
+├── ignition/              # Hardhat Ignition部署
+│   └── modules/
+│       └── Counter.ts     # Counter合约部署模块
+├── package-lock.json      # 项目依赖锁定文件
+├── package.json           # 项目依赖配置
+├── public/                # 公共目录（与项目无关）
+│   ├── 1.png             # 项目截图1
+│   ├── 2.png             # 项目截图2
+│   ├── 3.png             # 项目截图3
+│   ├── 4.png             # 项目截图4
+│   ├── 5.png             # 项目截图5
+│   └── 6.png             # 项目截图6
+│   ├──钱包连接流程图.md      # 钱包连接功能流程图
+│   ├──代币管理流程图.md      # 代币管理功能流程图
+│   ├──借贷功能流程图.md      # 借贷功能流程图
+│   ├──DEX交易流程图.md       # DEX交易功能流程图
+│   └──挖矿功能流程图.md      # 挖矿功能流程图
+├── scripts/               # 部署合约和管理脚本
+│   ├── deploy.ts         # 合约部署脚本
+│   ├── fund-wallet.ts    # 钱包资金管理
+│   └── send-op-tx.ts     # OP链交易脚本
+├── test/                 # 测试文件
+│   ├── Counter.ts        # Counter合约测试
+│   └── DeFiTest.ts       # DeFi系统测试
+└── tsconfig.json         # 根目录TypeScript配置
 ```
 
 ---
